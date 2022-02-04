@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "site ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acorev/AcoP3.git"
+  },
+  "author": "acorev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acorev/AcoP3/issues"
+  },
+  "homepage": "https://github.com/Acorev/AcoP3#readme"
+}
