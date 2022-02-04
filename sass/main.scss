@@ -7,4 +7,7 @@
 @import "./base/reset";
 @import "./base/typography";
 
-@import "./pages/home";
+@import "./layout/header";
+@import "./layout/main/city";
+@import "./layout/main/explo";
+@import "./layout/main/process";
