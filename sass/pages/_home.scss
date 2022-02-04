@@ -11,11 +11,55 @@
 
 /* city */
 .city{
-    background-color: #f6f6f6;
+    background-color: #eaeaea;
     text-align: center;
     padding: 1.5rem 0;
     font-size: 1.5rem;
     &__icon{
         padding-right: 0.5rem;
+    }
+}
+
+/* explo */
+.explo{
+    @include flexMidCol;
+    padding-bottom: 2rem;
+    background-color: #f6f6f6;
+    &__titre{
+        @include flexMidCol;
+        margin: 1.5rem 0;
+        font-size: 1.75rem;
+        @media (min-width: 768px){
+            @include flexMidRow;
+            & span{
+                text-indent: 0.4rem;
+            };
+        }
+    }
+    &__text{
+        @include flexMidCol;
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        @media (min-width: 768px){
+            @include flexMidRow;
+            & span{
+                text-indent: 0.4rem;
+            };
+        }        
+    }
+    &__bp{
+        border: none;
+        color: white;
+        margin: 2rem 0;
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        background-image: linear-gradient($colour-secondary,$colour-primary);
+        border-radius: 2rem;
+        box-shadow: 3px 6px 16px 2px rgba(0,0,0,0.74);
+        cursor: pointer;
+    }
+    &__bp:hover{
+        transform: scale(1.015);
     }
 }
