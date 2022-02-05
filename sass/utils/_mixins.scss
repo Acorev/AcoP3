@@ -13,9 +13,15 @@
 }
 
 @mixin bpShadow {
-    box-shadow: 3px 6px 16px 2px rgba(0,0,0,0.74);
+    box-shadow: 3px 6px 5px 1px rgba(0,0,0,0.3);
 }
 
 @mixin bpZoom {
     transform: scale(1.015);
+}
+
+@mixin bpCercle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
