@@ -1,0 +1,75 @@
+.resto{
+    padding: 2rem 2rem;
+    background-color: #f6f6f6;
+    &__titre{
+        
+        padding: 1.5rem 0;
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        @media (min-width: 768px){
+            flex-direction: row;
+        }
+    }
+    &__card{
+        width: 100%;
+        &:hover{
+            @include bpZoom;
+        }
+    }
+    &__img{
+        height: 14rem;
+        & img{
+            border-radius: 1.5rem 1.5rem 0 0;
+        }
+    }
+    &__text{
+        position: relative;
+        background-color: white;
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0 1rem;
+        & h4{
+            padding: 1rem 0;
+        }
+        & p{
+            padding-bottom: 1rem;
+        }
+        & span{
+            position: absolute;
+            font-size: 2rem;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            & .fas{
+                background: linear-gradient($colour-primary, $colour-secondary);
+                background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                opacity: 0;
+            }
+            &:hover .fas{
+                opacity: 1;
+                transform: scale(1.02);
+                transition:all 250ms ease-in-out;
+            }
+        }
+    }
+    &__new{
+        position: relative;
+    }
+    &__new::before{
+        position: absolute;
+        content: "Nouveau";
+        width: 5rem;
+        height: 2rem;
+        background-color: $colour-Tertiaire;
+        color: darken($color: $colour-Tertiaire, $amount: 40%);
+        right: 1rem;
+        top: 1rem;
+        @include flexMid;
+    }
+}
