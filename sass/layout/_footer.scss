@@ -1,0 +1,32 @@
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2rem 2rem;
+    &__titre{
+        font-family: 'Shrikhand', sans-serif;
+        padding-bottom: 2rem;
+    }
+    &__icon1{
+        padding-bottom: 0.75rem;
+        & i{
+            margin-right: 1rem;
+            font-size: 120%;
+        }
+    }
+    &__icon2{
+        padding-bottom: 0.75rem;
+        & i{
+            margin-right: 1rem;
+        }
+    }
+    &__text{
+        padding-bottom: 0.75rem;
+    }
+    @media (min-width: 992px){
+        &__menu{
+            @include flexMidRow;
+            justify-content: space-around;
+        }
+    }
+}
