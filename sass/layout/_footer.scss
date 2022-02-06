@@ -1,5 +1,9 @@
+.footerBackColor{
+    background-color: black;
+}
 
 .footer{
+    @include marginMid;
     background-color: black;
     color: white;
     padding: 2rem 2rem;

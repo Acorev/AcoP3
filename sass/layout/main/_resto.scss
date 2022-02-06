@@ -1,4 +1,8 @@
+.restoBackColor{
+    background-color: #f6f6f6;
+}
 .resto{
+    @include marginMid;
     padding: 2rem 2rem;
     background-color: #f6f6f6;
     &__titre{

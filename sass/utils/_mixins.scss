@@ -31,3 +31,8 @@
     height: 2rem;
     border-radius: 50%;
 }
+
+@mixin marginMid {
+    max-width: 1445px;
+    margin: 0 auto;
+}
