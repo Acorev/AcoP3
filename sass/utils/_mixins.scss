@@ -36,3 +36,20 @@
     max-width: 1445px;
     margin: 0 auto;
 }
+
+@mixin posAbsMid{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin gradientTrans {
+    background: linear-gradient($colour-primary, $colour-secondary);
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+    transition:all 250ms ease-in-out;
+    opacity: 0;
+}

@@ -42,23 +42,14 @@
             padding-bottom: 1rem;
         }
         & span{
-            position: absolute;
+            @include posAbsMid;
             font-size: 2rem;
             right: 2rem;
-            top: 50%;
-            transform: translateY(-50%);
             & .fas{
-                background: linear-gradient($colour-primary, $colour-secondary);
-                background: -webkit-linear-gradient($colour-primary, $colour-secondary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                opacity: 0;
+                @include gradientTrans;
             }
             &:hover .fas{
                 opacity: 1;
-                transform: scale(1.1);
-                transition:all 250ms ease-in-out;
             }
         }
     }
