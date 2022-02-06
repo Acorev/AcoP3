@@ -1,6 +1,18 @@
+.header__span{
+    & a{
+        @include posAbsMid;
+        left: 2rem;
+        font-size: 70%;
+    }
+}
 .page{
     &__img{
-        height: 20rem;
+        position: relative;
+        height: 50vh;
+        & img{
+            object-fit: cover;
+            object-position: 50% 70%;
+        }
     }
     &__pos{
         position: relative;

@@ -25,9 +25,11 @@
         }
     }
     &__img{
-        height: 14rem;
+        height: 45vh;
         & img{
             border-radius: 1.5rem 1.5rem 0 0;
+            object-fit: cover;
+            object-position: 50% 62%;
         }
     }
     &__text{
