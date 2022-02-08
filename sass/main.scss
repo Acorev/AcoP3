@@ -1,14 +1,37 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Shrikhand&display=swap');
 
-@import "./utils/mixins";
-@import "./utils/variables";
+// 1. Configuration and helpers
+@import
+    "./abstracts/variables",
+    "./abstracts/functions",
+    "./abstracts/mixins";
 
-@import "./base/base";
-@import "./base/reset";
-@import "./base/typography";
+// 2. Vendors
+@import
+    "./vendors/normalize";
 
-@import "./layout/header";
-@import "./layout/footer";
+// 3. Base stuff
+@import 
+    "./base/base",
+    "./base/fonts",
+    "./base/typography",
+    "./base/helpers";
 
-@import "./pages/home";
-@import "./pages/page1";
+// 4. Layout-related sections
+@import 
+    "./layout/header",
+    "./layout/footer";
+
+// 5. Components
+@import
+    "./components/button";
+
+// 6. Page-specific styles
+@import 
+    "./pages/home",
+    "./pages/page1";
+
+// 7. Themes
+@import
+    "./themes/default";
