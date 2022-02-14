@@ -1,19 +1,19 @@
 {
-  "name": "p3",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "site ohmyfood",
+  "description": "P3",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Acorev/AcoP3.git"
+    "url": "git+https://github.com/Acorev/FrancoisDelassalle_3_24012022.git"
   },
-  "author": "acorev",
+  "author": "francois delassalle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Acorev/AcoP3/issues"
+    "url": "https://github.com/Acorev/FrancoisDelassalle_3_24012022/issues"
   },
-  "homepage": "https://github.com/Acorev/AcoP3#readme"
+  "homepage": "https://github.com/Acorev/FrancoisDelassalle_3_24012022#readme"
 }
