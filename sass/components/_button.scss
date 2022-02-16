@@ -1,4 +1,18 @@
 
+// bp main
+.bp-main{
+    display: inline-flex;
+    color: white;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: $colour-gray-light;
+    border-radius: 25px;
+    box-shadow: 2px 3px 4px $colour-shadow;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    cursor: pointer;
+}
+
 // bp process
 .bp-process{
     padding: 1.5rem 0;

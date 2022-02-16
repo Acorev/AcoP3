@@ -1,0 +1,32 @@
+// explo
+.explo{
+    padding: 2rem 0;
+    background-color: $colour-gray-light;
+    text-align: center;
+    &__titre, &__text{
+        @include flexDirextion(column);
+        padding-bottom: 1rem;
+        // tablet-up
+        @include media-min(tablet-up){
+            @include centerFlexDirection;
+            & span{
+                text-indent: 0.5ch;
+            };
+        }
+    }
+    &__bp{
+        @extend .bp-main;
+        &--active:active{
+            filter: brightness(1.25);
+            box-shadow: 2px 3px 4px 4px $colour-shadow;
+        }
+        // destop
+        @include media-min(destop-up){
+            &--hover:hover{
+                filter: brightness(1.25);
+                box-shadow: 2px 3px 4px 4px $colour-shadow;
+            }
+        }
+    }
+    
+}
