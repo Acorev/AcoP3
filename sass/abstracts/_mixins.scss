@@ -4,8 +4,15 @@
     flex-direction: $align;
 }
 
-// centrage item
-@mixin centerFlex($align: row) {
+// center flex
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// center flex direction
+@mixin centerFlexDirection($align: row) {
     display: flex;
     flex-direction: $align;
     justify-content: center;
@@ -19,32 +26,16 @@
     }
 }
 
-// Zoom item
-@mixin bpZoom {
-    transform: scale(1.015);
-}
-
-// Cercle sur bp
+// Cercle
 @mixin bpCercle {
     width: 2rem;
     height: 2rem;
+    line-height: 2rem;
     border-radius: 50%;
 }
 
-// Ombre
-@mixin boxShadow {
-    box-shadow: 3px 5px 2px 0px rgba(0,0,0,0.4);
-}
-
-// centrage absolu
-@mixin posAbsMid{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-// linear-gradient  transition
-@mixin gradientTrans {
+// linear-gradient  transition Text
+@mixin gradientTransText {
     background: linear-gradient($colour-primary, $colour-secondary);
     background-clip: text;
     -webkit-background-clip: text;

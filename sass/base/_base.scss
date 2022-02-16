@@ -7,9 +7,12 @@
     box-sizing: inherit;
 }
 
-html{
+body{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
+h2{font-size: 2rem;}
 
 a{
     text-decoration: none;
