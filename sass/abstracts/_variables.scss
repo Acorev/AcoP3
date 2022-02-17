@@ -8,7 +8,21 @@ $colour-gray-light: #f6f6f6;
 
 // Breakpoint
 $breakpoints: (
+    "mobile": 100px,
     "tablet-up": 768px,
-    "tablet": 850px,
     "destop-up": 992px
 );
+
+//-------------- grid-template-areas -----------------
+// process
+$grid-process:(
+    "mobile": "t1 t1 t1 t1 t1 t1" "b1 b1 b1 b1 b1 b1" "b2 b2 b2 b2 b2 b2" "b3 b3 b3 b3 b3 b3",
+    "tablet-up": "t1 t1 t1 t1 t1 t1" "b1 b1 b1 b2 b2 b2" ". b3 b3 b3 b3 .",
+    "destop-up": "t1 t1 t1 t1 t1 t1" "b1 b1 b2 b2 b3 b3"
+);
+
+// resto
+$grid-resto:(
+    "mobile": "t1 t1" "c1 c1" "c2 c2" "c3 c3" "c4 c4",
+    "destop-up": "t1 t1" "c1 c2" "c3 c4");
+//----------------------------------------------------

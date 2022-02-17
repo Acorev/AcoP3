@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Acorev/FrancoisDelassalle_3_24012022/issues"
   },
-  "homepage": "https://github.com/Acorev/FrancoisDelassalle_3_24012022#readme"
+  "homepage": "https://github.com/Acorev/FrancoisDelassalle_3_24012022#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
 }

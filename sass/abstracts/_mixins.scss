@@ -26,6 +26,14 @@
     }
 }
 
+// Choix breakpoints + grid areas
+@mixin media-grid-min($tag, $_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        grid-template-areas: map-get($tag, $_key);
+        &{ @content; }
+    }
+}
+
 // Cercle
 @mixin bpCercle {
     width: 2rem;
