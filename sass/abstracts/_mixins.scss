@@ -52,3 +52,21 @@
     transition:all 250ms ease-in-out;
     opacity: 0;
 }
+
+// position absolute center
+@mixin posTopCenter{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// linear-gradient  transition
+@mixin gradientTrans {
+    background: linear-gradient($colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+    transition:all 250ms ease-in-out;
+    opacity: 0;
+}
