@@ -2,9 +2,13 @@
 $colour-primary: #9356DC ;
 $colour-secondary: #FF79DA ;
 $colour-Tertiaire: #99E2D0;
+$colour-black: #353535;
 $colour-shadow: #a0a0a0;
 $colour-gray: #eaeaea;
 $colour-gray-light: #f6f6f6;
+
+// max screen
+$maxi-screen: 1280px;
 
 // Breakpoint
 $breakpoints: (
@@ -16,13 +20,19 @@ $breakpoints: (
 //-------------- grid-template-areas -----------------
 // process
 $grid-process:(
-    "mobile": "t1 t1 t1 t1 t1 t1" "b1 b1 b1 b1 b1 b1" "b2 b2 b2 b2 b2 b2" "b3 b3 b3 b3 b3 b3",
-    "tablet-up": "t1 t1 t1 t1 t1 t1" "b1 b1 b1 b2 b2 b2" ". b3 b3 b3 b3 .",
-    "destop-up": "t1 t1 t1 t1 t1 t1" "b1 b1 b2 b2 b3 b3"
+    "mobile": "t1" "b1" "b2" "b3",
+    "tablet-up": "t1 t1 t1 t1" "b1 b1 b2 b2" ". b3 b3 .",
+    "destop-up": "t1 t1 t1" "b1 b2 b3"
 );
 
 // resto
 $grid-resto:(
-    "mobile": "t1 t1" "c1 c1" "c2 c2" "c3 c3" "c4 c4",
+    "mobile": "t1" "c1" "c2" "c3" "c4",
     "destop-up": "t1 t1" "c1 c2" "c3 c4");
+
+// footer
+$grid-footer:(
+    "mobile": "t1" "m1" "m2" "m3" "m4",
+    "destop-up": "t1 m1 m2 m3 m4");
+
 //----------------------------------------------------

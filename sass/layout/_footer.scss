@@ -1,0 +1,30 @@
+// footer
+.footer-screen{background-color: $colour-black;}
+.footer{
+    max-width: $maxi-screen;
+    margin: 0 auto;
+    display: grid;
+    @include media-grid-min($grid-footer, mobile);
+    @include media-grid-min($grid-footer, destop-up);
+    background-color: $colour-black;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    &__titre{
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    &__menu{
+        padding-bottom: 0.75rem;
+        & .fas{
+            margin-right: 1rem;
+        }
+    }
+
+    &__titre{grid-area: t1;}
+    &__menu1{grid-area: m1;}
+    &__menu2{grid-area: m2;}
+    &__menu3{grid-area: m3;}
+    &__menu4{grid-area: m4;}
+}
