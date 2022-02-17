@@ -1,0 +1,10 @@
+// header img
+.header-img{
+    position: relative;
+    & img{
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}

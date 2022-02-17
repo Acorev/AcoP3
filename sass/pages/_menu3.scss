@@ -1,0 +1,13 @@
+// header
+.header__span{
+        position: absolute;
+        font-size: 2rem;
+        left: 2rem;
+        top: 50%;
+        transform: translateY(-50%)
+}
+
+// Import
+
+// header img
+@import "../layout/menu/header-img";
