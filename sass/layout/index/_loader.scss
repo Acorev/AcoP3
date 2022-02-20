@@ -1,0 +1,60 @@
+.loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $colour-loader;
+    //opacity: 0.9;
+    z-index: 1;
+    animation: loader-out ease 3s forwards;
+    &__spinner{
+        width: 80px;
+        height: 80px;
+        position: relative;
+    }
+    &__spin1{
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 8px solid transparent;
+        border-top-color: $colour-primary;
+        border-bottom-color: $colour-secondary;
+        border-radius: 50%;
+        animation: circle1 0.6s linear;
+        animation-iteration-count: 3;
+    }
+    &__spin2{
+        box-sizing: border-box;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+        background-color: $colour-Tertiaire;
+        border-radius: 50%;
+        animation: circle2 0.6s linear;
+        animation-iteration-count: 3;
+    }
+}
+
+/* Cercle tournant */
+@keyframes circle1 {
+    0%{transform: rotate(0deg); border-width: 10px;}
+    50%{transform: rotate(180deg); border-width: 1px;}
+    100%{transform: rotate(360deg); border-width: 10px;}
+}
+
+/* Cercle Scale */
+@keyframes circle2 {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+/* Arret loader */
+@keyframes loader-out {
+    to{max-height: 0; overflow: hidden;}
+}
