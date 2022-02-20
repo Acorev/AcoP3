@@ -16,13 +16,13 @@
     }
     &__bp{
         @extend .bp-main;
-        &--active:active{
+        &--pClass:active{
             filter: brightness(1.25);
             box-shadow: 2px 3px 4px 4px $colour-shadow;
         }
         // destop
         @include media-min(destop-up){
-            &--hover:hover{
+            &--pClass:hover{
                 filter: brightness(1.25);
                 box-shadow: 2px 3px 4px 4px $colour-shadow;
             }

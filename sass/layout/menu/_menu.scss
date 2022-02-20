@@ -1,0 +1,93 @@
+// menu
+.menu{
+    background-color: $colour-gray-light;
+    padding: 0 2rem;
+    &__tab{
+        & h3{
+            padding-bottom: 2rem 2rem 0;
+        }
+    }
+    &__cards{
+        animation: bpframe 1s forwards;
+        & :nth-child(1) .menu-card {background-color: $colour-primary;}
+        // frame validation menu
+        @keyframes bpframe {
+            from{transform: translateY(40px); opacity: 0;}
+            to{transform: translateY(0px);opacity: 1;}
+    }
+    }
+}
+
+// menu-card
+.menu-card{
+    display: flex;
+    box-shadow: 1px 2px 3px black;
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+    margin: 2rem 0;
+    
+    &__text{
+        padding: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        & h4{
+            padding-bottom: 1rem;
+        }
+        & p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &__prices{
+        display: flex;
+        margin-left: auto;
+        cursor: pointer;
+        & p{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1rem;
+            width: 5rem;
+        }
+        & span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $colour-Tertiaire;
+            margin-right: -5rem;
+            width: 5rem;
+            border-radius: 0 15px 15px 0;
+            opacity: 1;
+            transition: 1s margin-right;
+            & .fas{
+                background-color: white;
+                border-radius: 50%;
+                padding: 0.5rem;
+                color: $colour-Tertiaire;
+            }
+        }
+    }
+    &:active &__prices span{
+        margin-right: 0;
+        & .fas{
+            animation: check-rodate 0.5s 0.2s linear;
+        }
+    }
+    @include media-min(destop-up){
+        &:hover &__prices span{
+            margin-right: 0;
+            & .fas{
+                animation: check-rodate 0.5s 0.2s linear;
+            }
+        }
+    };
+
+    // check rodate
+    @keyframes check-rodate {
+        to{transform: rotate(360deg);}
+    }
+
+    
+}

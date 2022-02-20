@@ -1,0 +1,22 @@
+// menu-header
+.menu-header{
+    position: relative;
+    margin-top: -4rem;
+    padding-top: 2rem;
+    background-color: $colour-gray-light;
+    border-radius: 2.5rem 2.5rem 0 0;
+    &__titre{
+        position: relative;
+        font-family: $font-Shrikhand;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        &__icon1, &__icon2{
+            @include posTopCenter;
+            right: 3rem;
+        }
+        &__icon2{
+            // breakpoint drstop-up
+            @include heart-gradient-hover;
+        }
+    };
+}

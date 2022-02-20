@@ -1,17 +1,9 @@
 // Resto
 .resto{
     display: grid;
-    @include media-grid-min($grid-resto, mobile){
-        &__text{
-            & .fas{
-                @include gradientTrans;
-                &:active{opacity: 1;}
-            }
-        }
-    };
-    @include media-grid-min($grid-resto, destop-up){
-        &__text{& .fas:hover{opacity: 1;}}
-    };
+    grid-template-areas: map-get($grid-resto, mobile);
+    // breakpoint destop-up
+    @include media-grid-min($grid-resto, destop-up);
     gap: 2rem;
     padding: 2rem;
     background-color: $colour-gray-light;
@@ -40,10 +32,14 @@
         & p{
             padding-bottom: 1rem;
         }
-        & span{
+        &__icon1, &__icon2 {
             @include posTopCenter;
             font-size: 2rem;
             right: 2rem;
+        }
+        &__icon2{
+            // breakpoint destop-up
+            @include heart-gradient-hover;
         }
     }
     &__new{

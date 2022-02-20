@@ -1,0 +1,21 @@
+.commander{
+    @include centerFlex;
+    margin-bottom: 4rem;
+    &__bp{
+        @extend .bp-main;
+        & span{
+            margin: 0 2rem;
+        }
+        &--pClass:active{
+            filter: brightness(1.25);
+            box-shadow: 2px 3px 4px 4px $colour-shadow;
+        }
+        // destop
+        @include media-min(destop-up){
+            &--pClass:hover{
+                filter: brightness(1.25);
+                box-shadow: 2px 3px 4px 4px $colour-shadow;
+            }
+        }
+    }
+}

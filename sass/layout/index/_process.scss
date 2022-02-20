@@ -1,7 +1,7 @@
 // process
 .process{
     display: grid;
-    @include media-grid-min($grid-process, mobile);
+    grid-template-areas: map-get($grid-process, mobile);
     @include media-grid-min($grid-process, tablet-up);
     @include media-grid-min($grid-process, destop-up);
     gap: 2rem;
@@ -23,12 +23,10 @@
     }
     &__circle{
         @include bpCercle;
-        position: absolute;
+        @include posTopCenter;
         background-color: $colour-primary;
         color: white;
         left: -1rem;
-        top: 50%;
-        transform: translateY(-50%);
     }
     &__icon{
         position: absolute;

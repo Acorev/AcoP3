@@ -4,8 +4,14 @@
     max-width: $maxi-screen;
     margin: 0 auto;
     display: grid;
-    @include media-grid-min($grid-footer, mobile);
-    @include media-grid-min($grid-footer, destop-up);
+    padding-bottom: 1rem;
+    grid-template-areas: map-get($grid-footer, mobile);
+    @include media-grid-min($grid-footer, destop-up){
+        padding-bottom: 0;
+        &__menu{
+            padding-top: .5rem;
+        }
+    };
     background-color: $colour-black;
     color: white;
     padding-top: 3rem;

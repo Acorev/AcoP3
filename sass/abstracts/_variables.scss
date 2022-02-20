@@ -7,12 +7,15 @@ $colour-shadow: #a0a0a0;
 $colour-gray: #eaeaea;
 $colour-gray-light: #f6f6f6;
 
+// Fonts
+$font-Shrikhand: 'Shrikhand', sans-serif;
+$font-Roboto: 'Roboto', sans-serif;
+
 // max screen
 $maxi-screen: 1280px;
 
 // Breakpoint
 $breakpoints: (
-    "mobile": 100px,
     "tablet-up": 768px,
     "destop-up": 992px
 );
