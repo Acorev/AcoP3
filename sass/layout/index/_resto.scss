@@ -4,6 +4,13 @@
     grid-template-areas: map-get($grid-resto, mobile);
     // breakpoint destop-up
     @include media-grid-min($grid-resto, destop-up);
+    
+    &__titre{grid-area: t1;}
+    &__card1{grid-area: c1;}
+    &__card2{grid-area: c2;}
+    &__card3{grid-area: c3;}
+    &__card4{grid-area: c4;}
+
     gap: 2rem;
     padding: 2rem 2rem 4rem 2rem;
     background-color: $colour-gray-light;
@@ -55,9 +62,4 @@
             top: 1rem;
         }
     }
-    &__titre{grid-area: t1;}
-    &__card1{grid-area: c1;}
-    &__card2{grid-area: c2;}
-    &__card3{grid-area: c3;}
-    &__card4{grid-area: c4;}
 }
