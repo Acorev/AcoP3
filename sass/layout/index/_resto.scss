@@ -5,7 +5,7 @@
     // breakpoint destop-up
     @include media-grid-min($grid-resto, destop-up);
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     background-color: $colour-gray-light;
     &__titre{
         padding: 1.5rem 0;

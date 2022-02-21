@@ -1,6 +1,7 @@
 .commander{
     @include centerFlex;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    background-color: $colour-gray-light;
     &__bp{
         @extend .bp-main;
         & span{
