@@ -73,3 +73,11 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+// Menu H3 barre
+@mixin menu-bar {
+    background-color: $colour-Tertiaire;
+    height: .25rem;
+    width: 3rem;
+    margin-top: .5rem;
+}
