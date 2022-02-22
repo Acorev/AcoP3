@@ -12,10 +12,19 @@
     background-color: $colour-gray-light;
     padding: 0 2rem 2rem 2rem;
     &__tab{
+        position: relative;
         & h3{
             text-transform: uppercase;
         }
-        &__bar{@include menu-bar}
+        &__bar::after{
+            content: "";
+            position: absolute;
+            background-color: $colour-Tertiaire;
+            height: .28rem;
+            width: 3rem;
+            left: 0;
+            top: 2rem;
+        }
     }
     &__cards{
         //animation bpframe
